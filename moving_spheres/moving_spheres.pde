@@ -1,6 +1,6 @@
-// Global variables – can be used in ANY function below  //<>// //<>//
+// Global variables – can be used in ANY function below  //<>//
 int x = 0;
-int[] y = new int[50];
+float[] y = new float[100];
 
 // Runs once
 void setup() {
@@ -14,7 +14,7 @@ void setup() {
   while (counter < y.length) {
     
     // Set y value for this ellipse
-    y[counter] = y[counter - 1] + height / y.length;     //<>//
+    y[counter] = y[counter - 1] + height / y.length;    
     
     // Advance counter
     counter = counter + 1;
@@ -40,4 +40,4 @@ void draw() {
     // Advance the counter variable
     counter = counter + 1;
   }
-}
+} //<>//
