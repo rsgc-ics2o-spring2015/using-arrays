@@ -6,7 +6,7 @@ int[] y = {50, 150, 250, 350, 450}; // Create an array with five elements
 void setup() {
 
   // Create canvas
-  size(800, 500);
+  size(800, 500); //<>//
   
 }
 
@@ -19,18 +19,15 @@ void draw() {
   // Make the ellipse move across the screen
   x = x + 1;
   
-  // Draw the ellipse on screen
-  ellipse(x, y[0], 100, 100);
+  // Iterate through all values of the array
+  int counter = 0;
+  while (counter < y.length) {
+    
+    // Draw the ellipse on screen
+    ellipse(x, y[counter], 100, 100); //<>//
+    
+    // Advance the counter variable
+    counter = counter + 1;
+  }
 
-  // Draw the ellipse on screen
-  ellipse(x, y[1], 100, 100);
-  
-  // Draw the ellipse on screen
-  ellipse(x, y[2], 100, 100);
-
-  // Draw the ellipse on screen
-  ellipse(x, y[3], 100, 100);
-
-  // Draw the ellipse on screen
-  ellipse(x, y[4], 100, 100);
 }
