@@ -12,6 +12,12 @@ void setup() {
 // Runs repeatedly
 void draw() {
   
+  // Clear background
+  background(0);
+  
+  // Make the ellipse move across the screen
+  x = x + 1;
+  
   // Draw the ellipse on screen
   ellipse(x, 50, 100, 100);
   
